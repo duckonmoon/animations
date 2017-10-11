@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/flip"
+        android:enabled="true"
+        android:icon="@mipmap/bluedemonicon"
+        android:title="@string/flip"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/next"
+        android:title="@string/next"
+        app:showAsAction="never" />
+</menu>
