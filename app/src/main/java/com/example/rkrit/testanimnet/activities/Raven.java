@@ -66,6 +66,7 @@ public class Raven extends FragmentActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.first_menu_item:
+                startActivity(new Intent(this,FlipedActivity.class));
                 return true;
         }
         return false;

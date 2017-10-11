@@ -24,12 +24,20 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkrit.testanimnet.activities.MainActivity" />
         </activity>
-        <activity android:name=".activities.Raven"
+        <activity
+            android:name=".activities.Raven"
             android:parentActivityName=".activities.Flip_Activity"
             android:theme="@style/JustTest">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.rkrit.testanimnet.activities.Flip_Activity" />
+        </activity>
+        <activity
+            android:name=".activities.FlipedActivity"
+            android:parentActivityName=".activities.Raven"
+            android:theme="@style/JustTest">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.rkrit.testanimnet.activities.Raven"/>
         </activity>
     </application>
 
