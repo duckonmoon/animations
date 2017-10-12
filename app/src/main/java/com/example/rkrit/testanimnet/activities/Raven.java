@@ -5,12 +5,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.NavUtils;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.example.rkrit.testanimnet.R;
@@ -18,12 +20,17 @@ import com.example.rkrit.testanimnet.fragments.RavenFragment;
 
 import java.util.LinkedList;
 
-public class Raven extends FragmentActivity {
+
+//AppCompatActivity дозволяє використовувати і меню і фрагменти
+public class Raven extends AppCompatActivity {
+    //кількість сторінок на які я хочу поділити
     public static final int NUM_PAGES = 10;
 
+    //це якраз треба виправити
     private static LinkedList<String> ravenPages;
+    // штука яка дозволяє нам свайпити вліво вправо для переходу між сторінками тексту
     private ViewPager viewPager;
-
+    // адаптер для тої штуки
     private PagerAdapter pagerAdapter;
 
     @Override
@@ -31,11 +38,15 @@ public class Raven extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_raven);
 
-        viewPager = findViewById(R.id.pager);
+        // знаходимо на нашій xml пейджер і дивимось чи актіті вже була запущена , щоб не накладати фрагменти один на одного
+        viewPager = (ViewPager) findViewById(R.id.pager);
         if (savedInstanceState == null) {
             getRavenPages();
+            // клас адаптера внизу нічого особливого, можливо рішення там, я хз
             pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
+
             viewPager.setAdapter(pagerAdapter);
+            //коли ми свайпаєм вліво вправо або по меню клікаєм, щоб щось ствалось
             viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
                 @Override
                 public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -55,23 +66,38 @@ public class Raven extends FragmentActivity {
         }
     }
 
+    // ця функція при запуску актівіті додає меню , тобото ту штучку в екшн барі
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.breakit, menu);
+
+        menu.findItem(R.id.prev).setEnabled(viewPager.getCurrentItem() > 0);
+
+        MenuItem item = menu.add(Menu.NONE, R.id.next, Menu.NONE,
+                (viewPager.getCurrentItem() == pagerAdapter.getCount() - 1)
+                        ? R.string.finish
+                        : R.string.next);
+        item.setShowAsAction(MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+        super.onCreateOptionsMenu(menu);
         return true;
     }
 
+    // ну і що відбувається при кліці на меню
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.first_menu_item:
-                startActivity(new Intent(this,FlipedActivity.class));
+            case R.id.prev:
+                viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+                return true;
+
+            case R.id.next:
+                viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
                 return true;
         }
-        return false;
-    }
 
+        return super.onOptionsItemSelected(item);
+    }
+    //дічайша функція яка ділить стрінг на 10 частин
     private void getRavenPages()
     {
         String raven = getString(R.string.raven);
@@ -84,6 +110,7 @@ public class Raven extends FragmentActivity {
         Log.w("w","w");
     }
 
+    //чергова моя дика функція
     public static LinkedList<String> getRav()
     {
         ravenPages.add(ravenPages.size(),ravenPages.get(0));
@@ -91,12 +118,7 @@ public class Raven extends FragmentActivity {
         return ravenPages;
     }
 
-
-    public int getCurrent()
-    {
-        int i = viewPager.getCurrentItem();
-        return i;
-    }
+    //кнопка на телефоні назад клікається і що відбувається
     @Override
     public void onBackPressed() {
         if (viewPager.getCurrentItem() == 0) {
@@ -106,6 +128,7 @@ public class Raven extends FragmentActivity {
         }
     }
 
+    // простий адаптер який кожній сторінці присвоює свій фрагмент
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
