@@ -24,7 +24,7 @@ public class Raven extends AppCompatActivity {
     public static final int NUM_PAGES = 10;
 
     //це якраз треба виправити
-    private static LinkedList<String> ravenPages;
+    private static String[] ravenPages;
     // штука яка дозволяє нам свайпити вліво вправо для переходу між сторінками тексту
     private ViewPager viewPager;
     // адаптер для тої штуки
@@ -101,22 +101,14 @@ public class Raven extends AppCompatActivity {
     private void getRavenPages()
     {
         String raven = getString(R.string.raven);
-        ravenPages = new LinkedList<String>();
-        for (int i = 0;i < 10;i++)
-        {
-            ravenPages.add(raven.substring(raven.length()/10*i,raven.length()/10*(i+1)));
+        ravenPages = new String[NUM_PAGES];
+        for (int i = 0;i < 10;i++) {
+            ravenPages[i] = raven.substring(raven.length() / 10 * i, raven.length() / 10 * (i + 1));
         }
-        ravenPages.add(0,ravenPages.remove(ravenPages.size()-1));
+        ravenPages[9] += "vermore!";
         Log.w("w","w");
     }
 
-    //чергова моя дика функція
-    public static LinkedList<String> getRav()
-    {
-        ravenPages.add(ravenPages.size(),ravenPages.get(0));
-        ravenPages.remove(0);
-        return ravenPages;
-    }
 
     //кнопка на телефоні назад клікається і що відбувається
     @Override
@@ -136,7 +128,11 @@ public class Raven extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return new RavenFragment();
+            RavenFragment ravenFragment = new RavenFragment();
+            Bundle bundle = new Bundle();
+            bundle.putInt(RavenFragment.NUMBER_OF_PAGE,position);
+            ravenFragment.setArguments(bundle);
+            return ravenFragment;
         }
 
         @Override
@@ -144,5 +140,12 @@ public class Raven extends AppCompatActivity {
             return NUM_PAGES;
         }
     }
+
+
+    public static String getRavenPage(int i)
+    {
+        return ravenPages[i];
+    }
+
 }
 
