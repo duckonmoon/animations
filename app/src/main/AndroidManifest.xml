@@ -33,7 +33,7 @@
                 android:value="com.example.rkrit.testanimnet.activities.Flip_Activity" />
         </activity>
         <activity
-            android:name=".activities.FlipedActivity"
+            android:name=".activities.FlippedActivity"
             android:parentActivityName=".activities.Raven"
             android:theme="@style/JustTest">
             <meta-data android:name="android.support.PARENT_ACTIVITY"

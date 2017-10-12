@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/8dd710977019a794b9f162c2cec4c1aa7726d1e7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_e7e88a22553d4a4cc99c634056238cdbd63380c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/8d28cc08ec29937981cdd8f965d7eb62ebc0a3fe/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_6524c7e72ac2cdfa625588e0d80b25dcf0d0021e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/javax.inject-1_2fae7dd8f9ab83482af3f4836b87dc116cf49f90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_2f9857b2949ba9a16e49689489a9a18b37953740.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_8dde343c5017dede1bbbcf78a05beeb766bce328.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/1267cdddc6602d5c2a5411f9ee3b074c3994e4c8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_d2158ca318f8dde9e9dc4a1557600f4c5dc6388b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.gradle/caches/modules-2/files-2.1/com.squareup.dagger/dagger/1.2.1/78f96ef00fceee95802930944b1fc4e0e1f9aacc/dagger-1.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="78f96ef00fceee95802930944b1fc4e0e1f9aacc">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/dagger-1.2.1_759ab6f45388db1ff0ea0681bb5408ae7d7badd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/199c8c8686c8e56cd028176e5f5148a22bd4d8c1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_f842fea9a4202e4b35b8d11b781321ac38d24577.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/a061e53d6407a9e36522cb8a04c59b07500c362c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_36c82dc643448ad2453fb471598f67f6d384d682.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2369f53b3295c84a92194354f21fc5a4d8c1a47f">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ecd0b4c45b5a371da179dd2e9081a4b37baedde6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/429983eba817b6f72685e481b9e20cb8c219d050/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_caf444a7b4a73eee9b33b2687c3ae1a5951091b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/c6e2d5660fc0360c57d1c1f6216f8633e5bd60b9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_39a2e7d37d5bd823cc2b3de8aa3824ba8580ebce.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_40f4c84fed91805aa629df1f169fe0a519fe71aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/d3227cfa3daa2eeae9183879e9805f56de877855/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_fa40a09c0f8af7757dfa23962ca09c55136a4d67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/fc85007ce16e6c7a7d2c6b5a5ddbaf1125720198/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_0849eb04e62f129b9594daf179ecf8a617812f57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/rkrit/.android/build-cache/0c49fa1586efa22a39cb952a86219064d474e14e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/rkrit/Downloads/TestAnimNet/app/build/intermediates/pre-dexed/debug/classes_44bf55266bc743783b67e9c1b5d4d3549aa013bd.jar" />
+    </item>
+
+</items>
